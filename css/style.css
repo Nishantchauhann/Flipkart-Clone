@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+:root{
+    --main-bg-color : rgb(38, 0, 255);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+     background-color:var(--main-bg-color);
+    /* border: 2px solid red; */
+}
+
+nav{
+    display: flex;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+    padding:  0 25px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a{
+    color: wheat;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+nav ul li a:hover{
+    color: rgb(179, 189, 245);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.searchbar input{
+    width: 30vw;
+    height: 23px;
+    margin: 0 30px 0 56px;
+    border-radius: 4px ; 
+    padding: 0 12px;
+}
+
+.searchbar button{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+}
+
+
+.slider{
+    margin: auto;
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+.card{
+    /* background-color: burlywood; */
+    max-width: 91vw;
+    margin: 37px auto;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+}
+.card h2{
+    font-family: 'Roboto Mono', monospace;
+    
+}
+.carditems{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 12px;
+    width: 10vw;
+}
+
+.container{
+    min-height: calc(100vh - 50px - 12vh);
+}
+
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: blanchedalmond;
+    font-family: 'Roboto Mono', monospace;
+}
